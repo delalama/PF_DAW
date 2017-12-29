@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {GiphyService} from './gyphy-service.service';
+import {of} from 'rxjs/observable/of';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+
+  title = 'Aquí va la página de login!, que lleva a este compomente';
+
 }
