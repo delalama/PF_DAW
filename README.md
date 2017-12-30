@@ -12,11 +12,12 @@ This angular2 app pretends to show a functional way to connect to an external AP
 I tried to decompose into max reusable components, model components, service components to dispose a maintainable code
 
 # Graphical explanation
+
+# Simple presentation
 ![alt text](https://github.com/delalama/PF_DAW/blob/master/img_readme/1.png?raw=true)
 
-
-
+# You enter whatever
 ![alt text](https://github.com/delalama/PF_DAW/blob/master/img_readme/4.png?raw=true)
 
-
+# The app renders the JSON response of giphy API with limit 15 and entering my API CODE
 ![alt text](https://github.com/delalama/PF_DAW/blob/master/img_readme/3.png?raw=true)
