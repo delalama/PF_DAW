@@ -1,4 +1,4 @@
 export class MisGifs {
-  name: string;
-  url: string;
+  public name: string;
+  public url: string;
 }
