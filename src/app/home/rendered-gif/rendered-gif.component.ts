@@ -7,10 +7,10 @@ import {MyGif} from '../models/misGifs';
   styleUrls: ['./rendered-gif.component.css']
 })
 export class RenderedGifComponent implements OnInit {
-  @Input() misGifs: MyGif;
+  @Input() myGif: MyGif;
 
   constructor(misGifs: MyGif) {
-    this.misGifs = misGifs;
+    this.myGif = misGifs;
   }
 
   ngOnInit() {

@@ -1,20 +1,24 @@
-<div class="container">
-  <h1>Tag para mandar a giphy</h1>
-  <input type="text" #tagValue>
-  <button (click)="process(tagValue)">Consulta</button>
+<div class="row">
+  <div class="col-md-2 col-md-offset-5">
+
+    <h1>Tag para mandar a giphy</h1>
+    <input type="text" #tagValue>
+    <button (click)="process(tagValue)">Consulta</button>
+
+  </div>
 
 </div>
 
-<!--<app-rendered-gif *ngIf="misGifs!=null"></app-rendered-gif>-->
+<!--<app-rendered-gif *ngIf="myGif!=null"></app-rendered-gif>-->
 
 <div class="container-fluid">
 
-<ul *ngIf="giphies.length >1">
-  <div class="col-md-4" *ngFor="let Mygif of giphies" style="height: 400px">
-    <app-rendered-gif [misGifs]="Mygif"></app-rendered-gif>
-  </div>
-</ul>
+  <ul *ngIf="giphies.length >0">
+    <div class="col-md-4" *ngFor="let Mygif of giphies" style="height: 400px" id="container">
+      <app-rendered-gif [myGif]="Mygif"></app-rendered-gif>
+    </div>
+  </ul>
 
-  </div>
+</div>
 <!--<app-rendered-gif *ngFor="giphies"></app-rendered-gif>-->
 

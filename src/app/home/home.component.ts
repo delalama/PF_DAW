@@ -10,7 +10,6 @@ import {MyGif} from './models/misGifs';
 export class HomeComponent implements OnInit {
 
   datos: JSON;
-  // TODO HAY QUE APRENDER A DECLARAR UN ARRAY DE ESTE TIPO
 
   giphies = new Array();
 
@@ -38,10 +37,6 @@ export class HomeComponent implements OnInit {
     console.log('data will');
     console.log(data);
 
-    this.datos = data.data;
-    // console.log(this.datos);
-    // console.log('empieza el bucle');
-
     data.data.forEach((item, index) => {
 
       const ind = index;
@@ -57,28 +52,23 @@ export class HomeComponent implements OnInit {
 
     });
 
+    if ( data ) {
+      const newgif = new MyGif;
+      newgif.name = 'NO, MY FRIEND';
+      newgif.url = 'https://media2.giphy.com/media/JkXtlLdlE9Ww/giphy.gif';
+
+      this.giphies.push(newgif);
+    }
+    // this.datos = data.data;
+    // console.log(this.datos);
+    // console.log('empieza el bucle');
+
+
     console.log('acaba el bucle e imprimimos giphies');
 
     console.log(this.giphies);
 
-    //
-    // this.giphies[0].name = this.datos[0].title ;
-    // this.misGifs.name = this.datos[0].title ;
-    // this.misGifs.url = this.datos[0].images.original.url;
-
     this.misGifs = this.giphies[0];
     console.log(this.misGifs.url);
   }
-  // console.log(this.misGifs.name);
-
-
-  // this.giphies[0].url = this.datos[0].images.original.url ;
-  // TODO for para resp e imprimir cada video
-
-  //
-  // process(tagValue: HTMLInputElement){
-  //   console.log(tagValue.value + 'a cont');
-  //   this.giphiService.getUser().subscribe(data => console.log(data));
-  // }
-
 }
