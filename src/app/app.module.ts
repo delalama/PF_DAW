@@ -6,7 +6,7 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import {GiphyService} from './gyphy-service.service';
 import { HomeComponent } from './home/home.component';
-import {MisGifs} from './home/models/misGifs';
+import {MyGif} from './home/models/misGifs';
 import { RenderedGifComponent } from './home/rendered-gif/rendered-gif.component';
 
 @NgModule({
@@ -20,7 +20,7 @@ import { RenderedGifComponent } from './home/rendered-gif/rendered-gif.component
     FormsModule,
     HttpModule
   ],
-  providers: [GiphyService, MisGifs],
+  providers: [GiphyService, MyGif],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

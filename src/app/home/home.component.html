@@ -7,13 +7,14 @@
 
 <!--<app-rendered-gif *ngIf="misGifs!=null"></app-rendered-gif>-->
 
+<div class="container-fluid">
+
 <ul *ngIf="giphies.length >1">
-  <li *ngFor="let Mygif of giphies">
-    <!--<app-rendered-gif *ngIf="misGifs!=null"></app-rendered-gif>-->
+  <div class="col-md-4" *ngFor="let Mygif of giphies" style="height: 400px">
     <app-rendered-gif [misGifs]="Mygif"></app-rendered-gif>
-    <h1>AHORA RENDERIZO!</h1>
-  </li>
+  </div>
 </ul>
 
+  </div>
 <!--<app-rendered-gif *ngFor="giphies"></app-rendered-gif>-->
 

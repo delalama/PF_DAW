@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {GiphyService} from '../gyphy-service.service';
-import {MisGifs} from './models/misGifs';
+import {MyGif} from './models/misGifs';
 
 @Component({
   selector: 'app-home',
@@ -14,14 +14,14 @@ export class HomeComponent implements OnInit {
 
   giphies = new Array();
 
-  misGifs: MisGifs;
+  misGifs: MyGif;
 
   private giphiService: GiphyService;
 
   ngOnInit(): void {
   }
 
-  constructor(giphiService: GiphyService, misGifs: MisGifs) {
+  constructor(giphiService: GiphyService, misGifs: MyGif) {
     this.giphiService = giphiService;
     this.misGifs = misGifs;
   }
@@ -35,8 +35,10 @@ export class HomeComponent implements OnInit {
     // initialize array to avoiding unnecesary oversize
     this.giphies = new Array();
     //
-    // console.log(data);
-    // this.datos = data.data;
+    console.log('data will');
+    console.log(data);
+
+    this.datos = data.data;
     // console.log(this.datos);
     // console.log('empieza el bucle');
 
@@ -47,11 +49,12 @@ export class HomeComponent implements OnInit {
       const url = item.images.original.url;
       console.log('fin elemento');
 
-      const newgif = new MisGifs;
+      const newgif = new MyGif;
       newgif.name = item.title;
       newgif.url = item.images.original.url;
 
       this.giphies.push(newgif);
+
     });
 
     console.log('acaba el bucle e imprimimos giphies');

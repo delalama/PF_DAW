@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {MisGifs} from '../models/misGifs';
+import {MyGif} from '../models/misGifs';
 
 @Component({
   selector: 'app-rendered-gif',
@@ -7,9 +7,9 @@ import {MisGifs} from '../models/misGifs';
   styleUrls: ['./rendered-gif.component.css']
 })
 export class RenderedGifComponent implements OnInit {
-  @Input() misGifs: MisGifs;
+  @Input() misGifs: MyGif;
 
-  constructor(misGifs: MisGifs) {
+  constructor(misGifs: MyGif) {
     this.misGifs = misGifs;
   }
 
