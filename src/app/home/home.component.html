@@ -1,0 +1,8 @@
+<div class="container">
+  <h1>Tag para mandar a giphy</h1>
+  <input type="text" #tagValue>
+  <button (click)="process(tagValue)">Consulta</button>
+
+</div>
+
+<app-rendered-gif *ngIf="misGifs!=null"></app-rendered-gif>
