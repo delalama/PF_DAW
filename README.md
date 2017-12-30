@@ -16,7 +16,7 @@ I tried to decompose into max reusable components, model components, service com
 
 
 
-![alt text](https://github.com/delalama/PF_DAW/blob/master/img_readme/2.png?raw=true)
+![alt text](https://github.com/delalama/PF_DAW/blob/master/img_readme/4.png?raw=true)
 
 
 ![alt text](https://github.com/delalama/PF_DAW/blob/master/img_readme/3.png?raw=true)
