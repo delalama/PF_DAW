@@ -5,7 +5,7 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class GiphyService {
   private API_CALL = 'http://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=';
-  private API_KEY = 'WnjCPisi02fooEvB25iMLbOQ26fIVbsz';
+  private API_KEY = 'WRITE YOUR OWN API KEY';
   private API_LIMIT = '&limit=15';
 
   private API_CALL2 = 'http://api.giphy.com/v1/gifs/search?q=';
