@@ -8,10 +8,9 @@
 <!--<app-rendered-gif *ngIf="misGifs!=null"></app-rendered-gif>-->
 
 <ul *ngIf="giphies.length >1">
-  <li >
+  <li *ngFor="let Mygif of giphies">
     <!--<app-rendered-gif *ngIf="misGifs!=null"></app-rendered-gif>-->
-    <app-rendered-gif *ngIf="misGifs!=null"></app-rendered-gif>
-    <app-rendered-gif [misGifs]="misGifs"></app-rendered-gif>
+    <app-rendered-gif [misGifs]="Mygif"></app-rendered-gif>
     <h1>AHORA RENDERIZO!</h1>
   </li>
 </ul>
