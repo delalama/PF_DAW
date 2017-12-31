@@ -10,7 +10,7 @@ export class GiphyService {
 
   private API_CALL2 = 'http://api.giphy.com/v1/gifs/search?q=';
   API_VALUE: string;
-  private API_KEY2 = '&api_key=WnjCPisi02fooEvB25iMLbOQ26fIVbsz';
+  private API_KEY2 = HIDEN;
   private API_LIMIT2 = '&limit=15'; private enteredValue: string;
   constructor (
     private http: Http) {
